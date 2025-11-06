@@ -92,7 +92,7 @@ with st.sidebar:
 
 model, index, docs = load_embed_and_index()
 
-question = st.text_input("輸入你的問題（可中英）", placeholder="例如：合約解約流程是什麼？")
+question = st.text_input("輸入你的問題（可中英）", placeholder="例如：百擎的學經歷簡介？")
 go = st.button("送出", type="primary")
 
 if go and question.strip():
