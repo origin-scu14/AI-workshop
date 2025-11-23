@@ -39,7 +39,6 @@
 - 執行 LLM 解析  
 - 呼叫台北開放資料 API  
 - 連接 Firebase Firestore  
-- 可使用 Python Runtime 或 Docker Space
 
 ### 💬 LINE Bot（Messaging API）  
 負責：  
