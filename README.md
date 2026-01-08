@@ -29,11 +29,11 @@ Line ID: @621ezwxl
 ### 🔧 主要技術
 - 語言：Python（單一 `lambda_function.py`）
 - 事件來源：
-  - LINE Webhook（HTTP POST）
+  - LINE Webhook
   - EventBridge Scheduler（排程觸發）
 - 快取：Amazon S3（活動 JSON）
 - 活動資料來源：台北旅遊網 Open API
-- AI：OpenAI API（可選）
+- AI：OpenAI API
 
 ---
 
