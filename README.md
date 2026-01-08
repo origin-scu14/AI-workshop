@@ -26,9 +26,6 @@ Line ID: @621ezwxl
 
 ## 技術架構總覽（✅ 目前版本：Lambda 單檔整合 + S3 快取）
 
-本系統採 AWS 託管，重點是把「政府 API 拉資料」從使用者查詢路徑移除，
-改成 Scheduler 批次同步，讓 LINE 查詢延遲更穩定。
-
 ### 🔧 主要技術
 - 語言：Python（單一 `lambda_function.py`）
 - 事件來源：
