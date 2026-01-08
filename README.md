@@ -67,3 +67,4 @@ flowchart LR
     L1 -->|整理/Normalize/統計log| L1
     L1 -->|寫回快取| S3
   end
+<img width="778" height="543" alt="image" src="https://github.com/user-attachments/assets/4e476a54-25ef-48fe-be21-08084410de30" />
