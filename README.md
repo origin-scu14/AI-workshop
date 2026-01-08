@@ -1,8 +1,9 @@
-# 台北活動推薦 LINE Bot - 台北活動特搜 (Taipei Event Scout)
+# 台北活動特搜 (Taipei Event Scout)
+Line ID: @621ezwxl
 
 一個整合台北旅遊網 Open API 與 AI 的 LINE Bot 系統。  
 使用者透過自然語言詢問「近期台北有什麼活動」，Bot 會優先從 **S3 快取資料**快速回覆；  
-活動資料由 **EventBridge Scheduler** 定期批次同步，避免每次查詢都打政府 API，降低延遲與不穩定因素。
+活動資料由 **EventBridge Scheduler** 每天定時同步台北旅遊網資料，避免每次查詢都打政府 API，降低延遲與不穩定因素。
 
 ---
 
