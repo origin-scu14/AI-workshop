@@ -44,6 +44,8 @@
 
 ## 架構圖（目前）
 
+![架構圖（目前）](https://github.com/user-attachments/assets/4e476a54-25ef-48fe-be21-08084410de30)
+
 > 重點：**LINE 查詢路徑只讀 S3，不打政府 API；政府 API 只在 Scheduler 路徑呼叫。**
 
 ```mermaid
@@ -67,4 +69,6 @@ flowchart LR
     L1 -->|整理/Normalize/統計log| L1
     L1 -->|寫回快取| S3
   end
-<img width="778" height="543" alt="image" src="https://github.com/user-attachments/assets/4e476a54-25ef-48fe-be21-08084410de30" />
+
+
+
