@@ -1,10 +1,11 @@
-# 智源小隊 - Henry Fendy Max 曲葳
+# 台北活動特搜 (Taipei Event Scout) 
 
-# 台北活動特搜 (Taipei Event Scout)
-Line ID: @621ezwxl
 
 一個整合台北旅遊網 Open API 與 AI 的 LINE Bot 系統。  
 使用者透過自然語言詢問「近期台北有什麼活動」，
+- 智源小隊 - Henry, Fendy, Max, 曲葳 
+
+Line ID: @621ezwxl
 
 ![APP圖（目前）](https://github.com/user-attachments/assets/50029bb8-3ca1-4c6d-a160-fcd00764cb0b)
 
