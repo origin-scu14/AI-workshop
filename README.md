@@ -6,9 +6,19 @@ Line ID: @621ezwxl
 一個整合台北旅遊網 Open API 與 AI 的 LINE Bot 系統。  
 使用者透過自然語言詢問「近期台北有什麼活動」，
 
-![架構圖（目前）](https://github.com/user-attachments/assets/50029bb8-3ca1-4c6d-a160-fcd00764cb0b)
+![APP圖（目前）](https://github.com/user-attachments/assets/50029bb8-3ca1-4c6d-a160-fcd00764cb0b)
+
 
 ---
+## 開發動機
+
+- 台北活動資訊分散在不同網站／頁面，資料零星破碎、不好整理（資訊整合需求高）
+
+- 想要有一個「活動推薦助理」，能針對需求更精準找出適合的活動
+
+- 不想為了找活動到處切網站、比對時間與資訊，流程太耗時
+
+- 希望在 LINE 直接用自然語言快速查「近期活動」，並拿到整理後的推薦清單
 
 ## 功能特色
 
