@@ -46,27 +46,15 @@ Line ID: @621ezwxl
 
 > 重點：**LINE 查詢路徑只讀 S3，不打政府 API；政府 API 只在 Scheduler 路徑呼叫。**
 
-```mermaid
-flowchart LR
-  U[LINE 使用者] -->|訊息| LINE[LINE Messaging API]
-  LINE -->|Webhook POST| GW[API Gateway 或 Lambda Function URL]
-  GW -->|Invoke| L1[AWS Lambda: lambda_function.py]
-
-  subgraph QueryPath[查詢路徑：低延遲（預設不打政府 API）]
-    L1 -->|讀取快取 JSON| S3[(Amazon S3: taipei_activities.json)]
-    S3 --> L1
-    L1 -->|可選：送少量候選活動| OAI[OpenAI API]
-    OAI --> L1
-    L1 -->|Reply API| LINE
-  end
-
-  subgraph SyncPath[同步路徑：排程批次更新]
-    EB[EventBridge Scheduler] -->|每天/每小時等| L1
-    L1 -->|GET begin/end/page| TAPI[台北旅遊網 Open API]
-    TAPI --> L1
-    L1 -->|整理/Normalize/統計log| L1
-    L1 -->|寫回快取| S3
-  end
 
 
+---
+
+## 未來發展
+
+更精準的個人化推薦：加入使用者偏好（免費/親子/展覽/音樂等）、常去區域、收藏與回饋機制，讓推薦越用越準。
+
+定位與距離排序：整合使用者位置（或指定行政區/捷運站），提供「離我最近」與可到達性（交通/時間）建議。
+
+多來源與多城市擴充：除了台北旅遊網，擴充更多活動來源（展館、文化局、票務平台等）與其他縣市，形成更完整的活動聚合服務。
 
